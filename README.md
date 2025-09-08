@@ -1,8 +1,12 @@
 # -AI-
+#　行動経済学
+#　読書
+#　生涯学習
 python-practice g-test-notes ai-ethics-notebook
   さだやんポルポのAI学習ノート
 
-このリポジトリは、G検定の学習内容や、Pythonを使った実践・AIの倫理的観点についての学びをまとめる場所です。
+このリポジトリは、G検定の学習内容や、Pythonを使った実践・AIの倫理的観点
+にワイン、行動経済学、経済学、最近読んだ本についての学びをまとめる場所です。
 
   現在の勉強内容
 - G検定（AIの基礎、ディープラーニング、法律・倫理）
@@ -13,6 +17,8 @@ python-practice g-test-notes ai-ethics-notebook
 - 『G検定 最強の合格テキスト』全体像をつかむ中身も
 - 『Python1年生』実際に触ってみる
 - 『ゼロから作るDeep Learning』深く理解
+- ダニエルカーネマン　ファスト＆スロー
+- 
 
   今後やりたいこと
 - KaggleのTitanicにチャレンジ
