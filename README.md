@@ -1,7 +1,7 @@
 # -AI-
-#　行動経済学
-#　読書
-#　生涯学習
+# 行動経済学
+# 読書
+# 生涯学習
 # 自動車整備
 python-practice g-test-notes ai-ethics-notebook
   さだやんポルポのAI学習ノート
@@ -25,6 +25,7 @@ python-practice g-test-notes ai-ethics-notebook
 - 
 
   今後やりたいこと
+  色んな知識の融合　掛け合わせ
 - KaggleのTitanicにチャレンジ
 - AI倫理の記事をZennに投稿
 - 転職ポートフォリオとしてこのリポジトリを育てる！
