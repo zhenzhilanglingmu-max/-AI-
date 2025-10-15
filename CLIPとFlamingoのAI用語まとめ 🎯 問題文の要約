@@ -1,0 +1,75 @@
+🧠 CLIPとFlamingoのAI用語まとめ
+🎯 問題文の要約
+
+Text-to-Imageタスクとは、
+入力された文章（テキスト）をもとに、その内容を反映した画像を生成するタスクである。
+
+次の中から、Text-to-Imageタスクに用いられる適切なネットワークを選べ。
+
+🧩 選択肢と役割整理
+記号	モデル名	役割・特徴
+(ア) CLIP（Contrastive Language–Image Pretraining）	コントララスティブ・ランゲージ・イメージ・プレトレーニング。画像とテキストを共通の「意味空間」にマッピングして理解する。**橋渡し役（理解用）**であり、画像生成は行わない。	
+(イ) DALL·E	テキストをもとに画像を生成する。Text → Imageの代表的モデル。CLIPの仕組みを応用している。	
+(ウ) Flamingo	画像とテキストを両方入力して会話や説明を行うマルチモーダル理解モデル（Image → Text）。画像生成は主目的ではない。	
+(エ) Unified-IO	テキスト・画像・音声などを統合的に扱えるマルチモーダル生成モデル。画像生成（Text → Image）にも対応。	
+✅ 正解
+
+D（イ・エ）
+→ DALL·E と Unified-IO が Text-to-Image に用いられる。
+
+🧠 CLIPの位置づけ
+
+CLIPは「画像と言葉を結ぶ意味の翻訳機（橋渡し役）」として働く。
+画像とテキストを同じベクトル空間に変換し、意味の近さを学習する。
+
+テキスト ─▶ CLIP ─▶ 画像
+    ▲                 ▼
+    └── 共通の意味空間 ──┘
+
+💡 CLIPの使われ方
+用途	例	CLIPの役割
+Text → Image	DALL·E / Stable Diffusion	テキストの意味を画像生成モデルに伝える
+Image → Text	BLIP / Flamingo / GPT-4V	画像の意味をテキストモデルに伝える
+Text + Image → Text	Flamingo / LLaVA	会話や説明を生成するマルチモーダルAI
+Text + Image → Image	ControlNet / InstructPix2Pix	指示に基づく画像編集
+🔡 CLIPの読み方と意味
+
+Contrastive Language–Image Pretraining
+（コントララスティブ・ランゲージ・イメージ・プレトレーニング）
+
+英単語	カタカナ読み	意味
+Contrastive	コントララスティブ	対照的な（似てるものは近く、違うものは遠く）
+Language–Image	ランゲージ・イメージ	言語と画像
+Pretraining	プレトレーニング	事前学習
+
+📝 日本語訳：
+「言語と画像を対照的に学習させる事前学習モデル」
+
+💬 覚え方メモ
+モデル	イメージで覚えると…
+CLIP	言葉と絵を“くっつける”橋渡し役
+DALL·E	言葉を絵に“変える”アーティスト
+Flamingo	絵を見ながら“話せる”AI
+Unified-IO	なんでも理解・生成できる“オールラウンダー”
+🧩 まとめ一言
+
+🔸 CLIP は「理解と橋渡し」
+🔸 DALL·E / Unified-IO は「生成」
+🔸 Flamingo は「会話・説明」
+
+💡 要するに
+
+CLIPが意味をつなぎ、DALL·Eが描き、Flamingoが語る。
+
+📘 補足：TextとImageの関係
+種類	入力	出力	代表モデル	用途
+Text → Image	テキスト	画像	DALL·E / Midjourney / Stable Diffusion	文章から画像を生成
+Image → Text	画像	テキスト	BLIP / Flamingo / GPT-4V	画像の説明や要約
+Text + Image → Text	テキスト＋画像	テキスト	Flamingo / LLaVA	マルチモーダル会話
+Text + Image → Image	テキスト＋画像	画像	ControlNet / InstructPix2Pix	画像編集や変換
+💬 一言まとめ
+
+「CLIP」は見て理解する、
+「DALL·E」は描く、
+「Flamingo」は話す、
+「Unified-IO」は全部できる。
