@@ -1,0 +1,54 @@
+# GLUE（General Language Understanding Evaluation）
+
+**読み方：ジェネラル・ランゲージ・アンダースタンディング・エバリュエーション**  
+意味：一般的な言語理解の評価  
+略称：**GLUE（グルー）**
+
+---
+
+## 🧠 概要
+GLUEは、**自然言語処理（NLP：エヌエルピー）モデルがどれだけ言葉の意味を理解しているかを評価するベンチマーク（総合テスト）**。  
+文章の理解力をいろんな角度から測ることで、AIが「人間のように言葉を理解できているか」を判断する。
+
+---
+
+## 📋 タスクの種類（GLUEの構成）
+
+| タスク名 | 内容 | 例 |
+|-----------|------|----|
+| **CoLA**（Corpus of Linguistic Acceptability） | 文が文法的に正しいか判定 | “He go to school.” → × |
+| **SST-2**（Stanford Sentiment Treebank） | 感情分析（ポジ／ネガ） | “This movie was amazing.” → Positive |
+| **MRPC**（Microsoft Research Paraphrase Corpus） | 2つの文が同じ意味かどうか | “He said he was tired.” vs “He claimed he was sleepy.” |
+| **STS-B**（Semantic Textual Similarity Benchmark） | 文同士の意味の近さをスコアで測る | 「似てる度：0〜5」など |
+| **QQP**（Quora Question Pairs） | 質問が重複しているか | “How to lose weight?” vs “What’s the best way to slim down?” |
+| **MNLI**（Multi-Genre Natural Language Inference） | 文の関係（含意・矛盾・中立）を判断 | “A man is running.” vs “A person is exercising.” |
+| **QNLI**（Question Natural Language Inference） | 質問に対して文が答えになっているか | Q: “Where was he born?” A: “He was born in Tokyo.” |
+| **RTE**（Recognizing Textual Entailment） | 文の意味が他の文に含まれているか | “All dogs are animals.” → “My dog is an animal.” |
+| **WNLI**（Winograd NLI） | 代名詞の参照関係を理解 | “The trophy doesn’t fit in the suitcase because it’s too large.”（“it”はどっち？） |
+
+---
+
+## 🧩 SuperGLUEとの関係
+GLUEが「少し簡単すぎる」と言われたため、  
+その改良版として **SuperGLUE（スーパーグルー）** が登場。  
+より高度な常識推論や長文理解のタスクを含む。
+
+---
+
+## 🧮 評価方法
+モデルごとのタスク正答率をスコア化し、  
+その平均を「**GLUEスコア**」として評価する。  
+
+- 人間：おおむね90点台  
+- 初期のBERT：80点台  
+- GPT-4クラス：すでに人間を超えるレベル  
+
+---
+
+## 💬 まとめ
+- GLUEは「自然言語理解」を測るための総合テスト  
+- 文法・感情・意味・関係性など多角的に評価  
+- BERTやGPTなどの性能比較に利用  
+- 発展版として「SuperGLUE」が存在  
+
+> つまり、AIモデルの**“言語理解力センター試験”**やな。
