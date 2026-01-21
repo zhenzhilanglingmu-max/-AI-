@@ -3,7 +3,8 @@
 # 読書
 # 生涯学習
 # 自動車整備
-#　思いついた歌詞
+# 思いついた歌詞
+
 python-practice g-test-notes ai-ethics-notebook
   さだやんポルポのAI学習ノート
 
